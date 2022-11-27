@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular JS</title>
 </head>
-<body>
+<body ng-app="" ng-init="nome = 'Gustavo'">
     
-    <div ng-app="">
-        <input type="text" ng-model="nome"> <p ng-bind="nome"></p>
-    </div>
+
+    <input type="text" ng-model="nome"><br><br>
+    {{ nome }}
+
 
     <script src="angular.min.js"></script>
 </body>
